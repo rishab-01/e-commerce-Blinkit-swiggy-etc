@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Cart - Blinkit</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1 class="logo">blinkit</h1>
+
+      <div class="location">
+        <h3>Delivery in 11 minutes</h3>
+        <p>Meerut Cantt, Meerut</p>
+      </div>
+
+      <input type="text" placeholder="Search for products" />
+
+      <a href="index.html">Home</a>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+      <h2>My Cart</h2>
+
+      <div class="cart-content">
+        <!-- Products -->
+        <div class="cart-products">
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300"
+              alt="Milk"
+            />
+
+            <div class="product-info">
+              <h3>Amul Taaza Milk</h3>
+              <p>500 ml</p>
+              <h3>₹29</h3>
+            </div>
+
+            <div class="quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1547514701-42782101795e?w=300"
+              alt="Oranges"
+            />
+
+            <div class="product-info">
+              <h3>Fresh Oranges</h3>
+              <p>1 kg</p>
+              <h3>₹80</h3>
+            </div>
+
+            <div class="quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img
+              src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300"
+              alt="Bananas"
+            />
+
+            <div class="product-info">
+              <h3>Fresh Bananas</h3>
+              <p>1 dozen</p>
+              <h3>₹50</h3>
+            </div>
+
+            <div class="quantity">
+              <button>-</button>
+              <span>2</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bill Details -->
+        <div class="bill">
+          <h2>Bill Details</h2>
+
+          <div class="bill-row">
+            <p>Item Total</p>
+            <p>₹209</p>
+          </div>
+
+          <div class="bill-row">
+            <p>Delivery Charge</p>
+            <p>₹25</p>
+          </div>
+
+          <div class="bill-row">
+            <p>Handling Charge</p>
+            <p>₹5</p>
+          </div>
+
+          <hr />
+
+          <div class="bill-row total">
+            <h3>Grand Total</h3>
+            <h3>₹239</h3>
+          </div>
+
+          <button class="payment-btn">Proceed to Payment</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

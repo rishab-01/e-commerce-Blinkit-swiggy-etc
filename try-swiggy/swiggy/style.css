@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #202124;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background-color: #ff5200;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links button {
+    padding: 15px 25px;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links button:hover {
+    background-color: white;
+    color: #ff5200;
+    transform: scale(1.05);
+}
+
+.nav-links .signin {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+
+
+.hero {
+    background-color: #ff5200;
+    color: white;
+    text-align: center;
+    padding: 65px 10% 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.search-box input {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    text-align: left;
+}
+
+.service-card {
+    width: 33.33%;
+    height: 280px;
+    background-color: white;
+    color: #454545;
+    padding: 30px;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    display: inline-block;
+    background-color: #fff0e8;
+    color: #ff5200;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.service-card img {
+    width: 60%;
+    height: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: contain;
+}
+
+.service-card button {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background-color: #ff5200;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-card button:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+.section {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    overflow-x: auto;
+}
+
+.category {
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    width: 150px;
+    height: 190px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.category h3 {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+
+
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.food {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.food:hover {
+    transform: translateY(-8px);
+}
+
+.food img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+}
+
+.food p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.restaurant {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.restaurant:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.restaurant img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.restaurant h3 {
+    margin: 12px;
+}
+
+.restaurant p {
+    color: gray;
+    margin: 10px 12px;
+    font-size: 14px;
+}
+
+
+
+
+.app-banner {
+    width: 80%;
+    margin: 60px auto;
+    background-color: #171d20;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.app-banner h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.app-banner p {
+    color: gray;
+    font-size: 16px;
+}
+
+.app-banner img {
+    width: 220px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.city-list div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.city-list div:hover {
+    border-color: #ff5200;
+    color: #ff5200;
+}
+
+
+
+
+.footer {
+    background-color: #f0f0f5;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-logo h1 {
+    color: #ff5200;
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #686b78;
+    margin-bottom: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer p:hover {
+    color: #ff5200;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .services {
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card h2 {
+        font-size: 22px;
+    }
+
+    .food-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .restaurant-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .section {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .category-list {
+        justify-content: flex-start;
+    }
+
+    .food-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .food img {
+        height: 90px;
+    }
+
+    .food p {
+        font-size: 14px;
+    }
+
+    .restaurant-list {
+        grid-template-columns: 1fr;
+    }
+
+    .app-banner {
+        width: 90%;
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-banner h2 {
+        font-size: 25px;
+    }
+
+    .app-banner img {
+        width: 150px;
+    }
+
+    .city-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .city-list div {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 40px 8%;
+    }
+
+}
